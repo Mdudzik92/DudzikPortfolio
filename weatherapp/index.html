@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="bg-primary pt-2 pb-2">
+        <div class="container">
+            <h1 class="text">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 bg-light pt-3 pb-3">
+                <h5>Enter your city</h5>
+                <div class="input-group ">
+                    <input type="text" id="cityChoice" class="form-control" placeholder="city name">
+                    <div class="input-group-append">
+                        <button id="searchButton" class="btn btn-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <ul class="list-group list-group-flush list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 pt-3 pb-4">
+                <div id="citySearch" class="mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 col-md-12">
+        <h5 class="hide">5-Day Forecast:</h5>
+        <div id="forecast" class="row">
+        </div>
+
+    </div>
+  </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
