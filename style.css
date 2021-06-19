@@ -14,15 +14,15 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	color: whitesmoke;
 }
 
 header {
-	padding: 20px 0;
+	padding: 10px 0;
 	text-align: right 20px;
 	width: 100%;
 	margin: 0;
 	margin-top: 2px;
-	margin-bottom: 20px;
 	color: white;
 	font-size: 20px;
 	padding-left: 20px;
@@ -31,6 +31,14 @@ header {
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	padding-bottom: 5px;
 }
 
 h3 {
@@ -48,18 +56,33 @@ li {
 	font-size: 20;
 }
 
-.form-container input [type="text"] {
+.form-group {
+	margin: auto;
+	padding-bottom: 20px;
+	width: 600px;
+}
+
+.form-group input[type="text"] {
+	padding: 8px;
 	width: 100%;
 }
 
-#form-group {
+.form-group input[type="email"] {
+	padding: 8px;
 	width: 100%;
-	margin: auto;
+}
+
+.contact-form {
 	padding: 20px;
+}
+
+.form-group input[type="submit"] {
+	padding: 8px;
 }
 
 #text-area {
 	width: 100%;
+	height: 140px;
 }
 
 .container {
@@ -77,11 +100,10 @@ li {
 }
 
 footer {
-	position: fixed;
+	position: absolute;
+	padding: 20px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
-	background-color: #d0daee;
 	text-align: center;
 }
