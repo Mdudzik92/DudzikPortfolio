@@ -18,19 +18,49 @@ body {
 }
 
 header {
-	padding: 10px 0;
-	text-align: right 20px;
+	padding: 10px 15px;
 	width: 100%;
 	margin: 0;
 	margin-top: 2px;
 	color: white;
 	font-size: 20px;
 	padding-left: 20px;
-	font-family: "Source Serif Pro", serif;
+	font-family: "Trebuchet MS", sans-serif;
+	right: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	padding: 20px;
+	height: auto;
+	min-height: 300px;
+	max-width: 1140px;
+	border: 5px whitesmoke solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	border-right-width: 6px;
+	border-top-style: double;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+#content-wrap {
+	display: grid;
+	grid-template-columns: 30% 70%;
 }
 
 a {
 	text-decoration: none;
+	color: whitesmoke;
+	text-shadow: 0.4px 0.4px black;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a:hover {
+	color: burlywood;
 }
 
 .button {
@@ -63,27 +93,34 @@ a {
 
 h1 {
 	text-align: center;
-	text-shadow: 1px 1px black;
+	text-shadow: 0.5px 0.5px black;
 }
 
 h2 {
 	padding-bottom: 5px;
-	text-shadow: 1px 1px black;
+	text-shadow: 0.5px 0.5px black;
+	padding-right: 5px;
 }
 
 h3 {
+	margin-left: 24px;
 	letter-spacing: 0.2em;
+	padding-bottom: 10px;
+	padding-left: 50px;
 }
 
 li {
 	list-style-type: none;
 }
 
-#form-container {
-	margin: auto;
-	width: 600px;
-	color: whitesmoke;
-	font-size: 20;
+#headshot {
+	border-radius: 50%;
+	display: inline-block;
+	clear: right;
+}
+
+#about {
+	display: inline-block;
 }
 
 .form-group {
@@ -111,20 +148,6 @@ li {
 	height: 140px;
 }
 
-.container {
-	/* background-color: sandybrown; */
-	width: 80%;
-	margin: auto;
-	padding: 20px;
-	max-width: 1140px;
-	border: 5px whitesmoke solid;
-	border-width: 3px;
-	border-bottom-width: 10px;
-	border-right-width: 6px;
-	border-top-style: double;
-	border-radius: 15px;
-}
-
 footer {
 	position: absolute;
 	padding: 20px;
@@ -132,4 +155,12 @@ footer {
 	left: 0;
 	width: 100%;
 	text-align: center;
+	margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 100%;
+		float: none;
+	}
 }

@@ -11,23 +11,38 @@
 	<body>
 		<header>
 			<h4>
+                <div class=header-links>
 				<a href="./index.html">About</a>
 				<a href="./portfolio.html">Portfolio</a>
 				<a href="./contact.html">Contact</a>
-			</h4>
+                </div>
+            </h4>
 		</header>
 
 		<div class="container">
-            <h3>Matt Dudzik</h3>
-            <a href="img/img2.jpg">
-            <img src="./img/img2.jpg" alt="Matt Dudzik" width="300px">
-            </a>
-        </container>
+            <div id="content-wrap">
+                <div id="box1">
+                    <h3>Matt Dudzik</h3>
+                    <a href="./index.html">
+                        <img src="./img/img2.jpg" alt="Matt Dudzik" id="headshot" width="300px">
+                    </a>
+                </div>
 
-		<footer><p>
+                <div id="box2">
+                    <sidebar id="about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis nostrum, consequuntur, placeat porro cum maxime minima molestias eos sequi quod voluptatibus vel, fugit laboriosam odit quibusdam possimus quae dolores?
+                    </sidebar>
+                </div>
+
+            </div>
+        </div>
+    </container>
+
+	<footer>
+        <p>
             Copyright &copy; 2021, Matt Dudzik
-        </p></footer>
-
+        </p>
+    </footer>
 		<div id="app"></div>
 		<script src="./script.js"></script>
 	</body>
