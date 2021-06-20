@@ -33,12 +33,42 @@ a {
 	text-decoration: none;
 }
 
+.button {
+	font-family: Arial;
+	font-size: 15px;
+	width: 140px;
+	height: 40px;
+	border-width: 1px;
+	color: #fff;
+	border-color: #d02718;
+	font-weight: bold;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	text-shadow: 0px 1px 0px #810e05;
+	background: linear-gradient(#c62d1f, #f24437);
+}
+
+.buttonClass:hover {
+	background: linear-gradient(#f24437, #c62d1f);
+}
+
+.button:hover {
+	background: sienna;
+
+	color: whitesmoke;
+}
+
 h1 {
 	text-align: center;
+	text-shadow: 1px 1px black;
 }
 
 h2 {
 	padding-bottom: 5px;
+	text-shadow: 1px 1px black;
 }
 
 h3 {
@@ -74,10 +104,6 @@ li {
 
 .contact-form {
 	padding: 20px;
-}
-
-.form-group input[type="submit"] {
-	padding: 8px;
 }
 
 #text-area {
