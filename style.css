@@ -18,24 +18,23 @@ body {
 }
 
 header {
-	padding: 10px 15px;
 	width: 100%;
 	margin: 0;
 	margin-top: 2px;
 	color: white;
 	font-size: 20px;
 	padding-left: 20px;
-	font-family: "Trebuchet MS", sans-serif;
+	padding-top: 12px;
 	right: 0;
 }
 
 .container {
 	width: 80%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 35px;
-	margin-bottom: 15px;
+	margin-bottom: 200px;
 	padding: 20px;
-	height: auto;
 	min-height: 300px;
 	max-width: 1140px;
 	border: 5px whitesmoke solid;
@@ -45,6 +44,7 @@ header {
 	border-top-style: double;
 	border-radius: 15px;
 	box-sizing: border-box;
+	display: block;
 }
 
 #content-wrap {
@@ -52,11 +52,25 @@ header {
 	grid-template-columns: 30% 70%;
 }
 
+#box1 {
+	padding: 10px;
+	width: max-content;
+}
+
+#box2 {
+	margin: 24px;
+	padding: 10px;
+	width: 400px;
+	margin-left: auto;
+}
+
 a {
 	text-decoration: none;
 	color: whitesmoke;
-	text-shadow: 0.4px 0.4px black;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	text-shadow: 0.4px 0 black;
+	font-family: brush-script-std, sans-serif;
+	padding-left: 10px;
+	font-size: 30px;
 }
 
 a:hover {
@@ -64,7 +78,7 @@ a:hover {
 }
 
 .button {
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	width: 140px;
 	height: 40px;
@@ -103,10 +117,11 @@ h2 {
 }
 
 h3 {
-	margin-left: 24px;
 	letter-spacing: 0.2em;
 	padding-bottom: 10px;
-	padding-left: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 32px;
 }
 
 li {
@@ -114,6 +129,7 @@ li {
 }
 
 #headshot {
+	margin-top: 24px;
 	border-radius: 50%;
 	display: inline-block;
 	clear: right;
@@ -149,18 +165,32 @@ li {
 }
 
 footer {
-	position: absolute;
-	padding: 20px;
-	bottom: 0;
+	padding: 10px;
 	left: 0;
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	position: fixed;
+	bottom: 0;
+	margin-top: 200px;
+	background-color: purple;
 }
 
-@media (max-width: 600px) {
-	.container {
-		width: 100%;
-		float: none;
+@media screen and (max-width: 700px) {
+	#content-wrap {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 80%;
+	}
+
+	footer {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#content-wrap {
+		display: grid;
+		grid-template-columns: 30% 70%;
 	}
 }
