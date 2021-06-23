@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	color: whitesmoke;
+	color: antiquewhite;
 }
 
 header {
@@ -32,8 +32,8 @@ header {
 
 a {
 	text-decoration: none;
-	color: darkred;
-	text-shadow: 0.4px 0 whitesmoke;
+	color: antiquewhite;
+	text-shadow: 2px 0 black;
 	font-family: brush-script-std, sans-serif;
 	padding-left: 10px;
 	font-size: 30px;
@@ -64,7 +64,7 @@ a {
 .button:hover {
 	background: sienna;
 
-	color: whitesmoke;
+	color: antiquewhite;
 }
 
 footer {
@@ -85,7 +85,7 @@ footer {
 	padding: 20px;
 	min-height: 300px;
 	max-width: 1140px;
-	border: 5px whitesmoke solid;
+	border: 5px antiquewhite solid;
 	border-width: 3px;
 	border-bottom-width: 10px;
 	border-right-width: 6px;
@@ -102,6 +102,9 @@ footer {
 
 #box1 {
 	padding: 10px;
+	grid-column: 1 / -1;
+	background-color: rgb(0, 0, 0.8, 0.7);
+	border-radius: 5px;
 }
 
 h3 {
@@ -117,9 +120,12 @@ img {
 	display: block;
 }
 
-#box2 {
+#box3 {
 	margin: 24px;
 	padding: 10px;
+	grid-column: 2 / -1;
+	background-color: rgb(0, 0, 0.8, 0.8);
+	border-radius: 5px;
 }
 
 #about {
@@ -173,17 +179,14 @@ h2 {
 @media screen and (max-width: 1220px) {
 	#content-wrap {
 		display: grid;
-		grid-template-columns: 30% 70%;
-		justify-content: center;
-		justify-items: center;
 	}
 
-	#box1 #box2 {
-		width: fit-content;
+	#box1 {
+		padding: 10px;
 	}
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1048px) {
 	#content-wrap {
 		display: grid;
 		justify-content: center;
@@ -191,8 +194,8 @@ h2 {
 		grid-template-columns: 80%;
 	}
 
-	#box2 {
-		margin: 4px;
+	#box3 {
+		grid-column: auto;
 	}
 
 	img {
@@ -200,19 +203,11 @@ h2 {
 		max-width: 300px;
 		max-height: 100%;
 	}
-
-	footer {
-		margin-top: 0px;
-	}
 }
 
 @media screen and (max-width: 480px) {
 	#content-wrap {
 		display: grid;
 		grid-template-columns: 80%;
-	}
-
-	#box1 #box2 {
-		padding: 0;
 	}
 }
