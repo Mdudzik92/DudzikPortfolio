@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -18,11 +19,9 @@ body {
 header {
 	width: 100%;
 	margin: 0;
-	margin-top: 2px;
 	font-size: 20px;
 	padding-left: 10px;
 	padding-top: 12px;
-	right: 0;
 }
 
 .header-links {
@@ -75,6 +74,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	margin-top: 100px;
+	text-shadow: 1px 1px black;
 }
 
 /* About / Portfolio pages */
@@ -107,13 +107,19 @@ footer {
 	border-radius: 5px;
 }
 
-h3 {
+.about-h3 {
 	letter-spacing: 0.2em;
 	text-align: center;
 	font-size: 32px;
 }
 
-img {
+h3 {
+	text-align: center;
+	font-size: 32px;
+	text-shadow: 0.5px 0.5px black;
+}
+
+#headshot {
 	width: 300px;
 	margin: 24px auto 0 auto;
 	border-radius: 50%;
@@ -134,44 +140,6 @@ img {
 
 .bold {
 	font-weight: bold;
-}
-
-/* Contact page */
-
-.contact-form {
-	padding: 20px;
-}
-
-h1 {
-	text-align: center;
-	text-shadow: 0.5px 0.5px black;
-}
-
-.form-group {
-	margin: auto;
-	padding-bottom: 20px;
-	width: 600px;
-}
-
-.form-group input[type="text"] {
-	padding: 8px;
-	width: 100%;
-}
-
-.form-group input[type="email"] {
-	padding: 8px;
-	width: 100%;
-}
-
-h2 {
-	padding-bottom: 5px;
-	text-shadow: 0.5px 0.5px black;
-	padding-right: 5px;
-}
-
-#text-area {
-	width: 100%;
-	height: 140px;
 }
 
 /* Media queries */
