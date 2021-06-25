@@ -14,13 +14,15 @@ html {
 
 body {
 	color: antiquewhite;
+	font-weight: lighter;
+	display: grid;
+	font-family: "EB Garamond", serif;
 }
 
 header {
 	width: 100%;
 	margin: 0;
 	font-size: 20px;
-	padding-left: 10px;
 	padding-top: 12px;
 }
 
@@ -68,20 +70,20 @@ a {
 
 footer {
 	padding: 10px;
-	left: 0;
-	width: 100%;
+	font-family: "Times New Roman", Times, serif;
 	text-align: center;
-	position: fixed;
-	bottom: 0;
-	margin-top: 100px;
 	text-shadow: 1px 1px black;
+	display: block;
+	background-color: rgb(0, 0, 0.8, 0.6);
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 /* About / Portfolio pages */
 
 .container {
 	width: 80%;
-	margin: 75px auto 100px auto;
+	margin: 35px auto 73px auto;
 	padding: 20px;
 	min-height: 300px;
 	max-width: 1140px;
@@ -92,7 +94,6 @@ footer {
 	border-top-style: double;
 	border-radius: 15px;
 	box-sizing: border-box;
-	display: block;
 }
 
 #content-wrap {
@@ -124,18 +125,22 @@ h3 {
 	margin: 24px auto 0 auto;
 	border-radius: 50%;
 	display: block;
+	padding-bottom: 20px;
+	padding-right: 20px;
 }
 
 #box3 {
-	margin: 24px;
+	margin: auto;
 	padding: 10px;
 	grid-column: 2 / -1;
 	background-color: rgb(0, 0, 0.8, 0.8);
 	border-radius: 5px;
+	margin-top: 2vh;
 }
 
 #about {
-	font-size: 24px;
+	font-size: 21px;
+	text-align: center;
 }
 
 .bold {
@@ -154,7 +159,7 @@ h3 {
 	}
 }
 
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 700px) {
 	#content-wrap {
 		display: grid;
 		justify-content: center;
@@ -170,12 +175,5 @@ h3 {
 		width: 100%;
 		max-width: 300px;
 		max-height: 100%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	#content-wrap {
-		display: grid;
-		grid-template-columns: 80%;
 	}
 }
