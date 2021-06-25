@@ -157,6 +157,7 @@ p {
 
 .card-content {
 	padding: 1.5em;
+	padding-top: 1px;
 	background-color: #004e7c;
 }
 
@@ -232,7 +233,7 @@ p {
 @media (min-width: 700px) {
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+		grid-template-columns: 1fr repeat(2, minmax(25em, auto)) 1fr;
 	}
 
 	#section-a .content-text {
@@ -244,15 +245,13 @@ p {
 		padding-top: 0;
 	}
 
-	.content-wrap,
-	#section-b ul {
+	.content-wrap {
 		grid-column: 2/4;
-		grid-row: 2/4;
 	}
 
-	.box,
-	#main-footer div {
-		grid-column: span 2;
+	#section-b ul {
+		grid-column: 2/4;
+		column-gap: 1em;
 	}
 
 	#section-b ul {
