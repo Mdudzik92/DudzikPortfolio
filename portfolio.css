@@ -133,38 +133,25 @@ p {
 
 /* Section B */
 
-#section-b {
-	padding: 2em 1em 1em;
-	background: rgba(51, 51, 51, 0.4);
-	width: 100%;
-	z-index: -1;
-}
-/* #section-b .bg-image {
-	
-} */
-
-#section-b ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
 }
 
-#section-b li {
-	margin-bottom: 1em;
-	background: #fff;
-	color: #333;
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-.card-content {
-	padding: 1.5em;
-	padding-top: 1px;
-	background-color: #004e7c;
-}
-
-.card-content h3,
-p {
-	color: whitesmoke;
-	text-shadow: 0.1px 0.4px black;
+.row2:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Section C */
