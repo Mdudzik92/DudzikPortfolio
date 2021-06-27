@@ -4,19 +4,19 @@
 	box-sizing: border-box;
 }
 
-html {
-	background: url(./img/img1.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 body {
 	color: antiquewhite;
 	font-weight: lighter;
 	display: grid;
 	font-family: "EB Garamond", serif;
+}
+
+.bg-img {
+	background: url(./img/img1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 header {
@@ -159,7 +159,7 @@ h3 {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 908px) {
 	#content-wrap {
 		display: grid;
 		justify-content: center;

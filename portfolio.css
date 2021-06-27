@@ -57,7 +57,7 @@ body {
 }
 
 #showcase p {
-	color: whitesmoke;
+	color: antiquewhite;
 	text-shadow: 0.1px 0.4px black;
 }
 
@@ -89,7 +89,7 @@ p {
 
 .btn {
 	display: inline-block;
-	background: rgba(51, 51, 51, 0.6);
+	background: rgba(38, 144, 212, 0.8);
 	box-shadow: 0 0 20px 0 rgba(73, 103, 133, 0.4);
 	color: #fff;
 	text-decoration: none;
@@ -133,25 +133,33 @@ p {
 
 /* Section B */
 
-.column {
-	float: left;
-	width: 33.33%;
-	padding: 50px;
-	text-align: center;
-	font-size: 25px;
-	color: white;
+#section-b {
+	padding: 2em 1em 1em;
+	background: rgba(51, 51, 51, 0.4);
+	width: 100%;
+	z-index: -1;
 }
 
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+#section-b ul {
+	list-style: none;
 }
 
-.row2:after {
-	content: "";
-	display: table;
-	clear: both;
+#section-b li {
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+	padding-top: 1px;
+	background-color: #004e7c;
+}
+
+.card-content h3,
+p {
+	color: antiquewhite;
+	text-shadow: 0.1px 0.4px black;
 }
 
 /* Section C */
@@ -205,11 +213,6 @@ p {
 	grid-template-columns: 1fr;
 }
 
-#main-footer a {
-	color: #2690d4;
-	text-decoration: none;
-}
-
 #main-footer p {
 	padding: 0;
 	font-size: 16;
@@ -217,7 +220,7 @@ p {
 
 /* Media Queries */
 
-@media (min-width: 700px) {
+@media (min-width: 908px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(25em, auto)) 1fr;
@@ -248,5 +251,15 @@ p {
 
 	#section-b li {
 		width: 31%;
+		max-width: 255px;
+	}
+
+	#ul-one {
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+
+	#ul-two {
+		margin-bottom: 25px;
 	}
 }
