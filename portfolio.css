@@ -132,6 +132,13 @@ p {
 	padding-bottom: 2em;
 }
 
+#section-a img {
+	max-width: 100px;
+	max-height: 80px;
+	display: inline;
+	padding: 10px;
+}
+
 /* Section B */
 
 #section-b {
@@ -228,8 +235,8 @@ p {
 	}
 
 	#section-a .content-text {
-		columns: 2;
-		column-gap: 2em;
+		columns: 1;
+		justify-content: center;
 	}
 
 	#section-a .content-text p {
@@ -239,7 +246,6 @@ p {
 	.content-wrap {
 		grid-column: 2/4;
 	}
-
 	#section-b ul {
 		grid-column: 2/4;
 		column-gap: 1em;
