@@ -157,7 +157,7 @@ h3 {
 
 @media screen and (min-width: 700px) {
 	.container {
-		margin: 35px auto 73px auto;
+		margin: 45px auto 45px auto;
 	}
 
 	#content-wrap {
@@ -189,9 +189,8 @@ h3 {
 		max-height: 100%;
 	}
 
-	.space {
-		display: grid;
-		grid-template-rows: 27px;
+	.icons {
+		max-width: 75px;
 	}
 }
 
