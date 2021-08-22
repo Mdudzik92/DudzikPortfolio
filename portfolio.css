@@ -162,6 +162,12 @@ p {
 	padding: 1.5em;
 	padding-top: 1px;
 	background-color: #004e7c;
+	min-height: 345px;
+	max-height: 345px;
+}
+
+.card-img {
+	min-height: 170px;
 }
 
 .card-content h3,

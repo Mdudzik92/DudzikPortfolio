@@ -194,3 +194,9 @@ h3 {
 		grid-template-rows: 27px;
 	}
 }
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.grid {
+		min-height: 100vh;
+	}
+} */
