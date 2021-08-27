@@ -192,6 +192,22 @@ h3 {
 	.icons {
 		max-width: 75px;
 	}
+
+	.icons:hover {
+		box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.9);
+	}
+
+	.github {
+		border-radius: 50%;
+	}
+
+	.linkedin {
+		border-radius: 35%;
+	}
+
+	.contact {
+		border-radius: 15%;
+	}
 }
 
 /* @media screen and (-webkit-min-device-pixel-ratio: 0) {
