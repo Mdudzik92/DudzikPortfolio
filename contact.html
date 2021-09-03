@@ -38,32 +38,30 @@
 				</div>
 				<div class="contact">
 					<h3>Email</h3>
-					<form>
+					<form id="contactForm" action="https://formsubmit.co/mdudzik92@gmail.com" method="POST">
 						<p>
 							<label>Name</label>
-							<input type="text" name="name">
+							<input type="text" name="name" id="name" required>
 						</p>
 						<p>
 							<label>Company</label>
-							<input type="text" name="company">
+							<input type="text" name="company" id="company">
 						</p>
 						<p>
 							<label>Email Address</label>
-							<input type="email" name="email">
+							<input type="text" name="email" id="email" required>
 						</p>
 						<p class="full">
 							<label>Message</label>
-							<textarea name="message" rows="5"></textarea>
+							<textarea name="message" rows="5" id="message" placeholder="Write your message here" required></textarea>
 						</p>
 						<p class="full">
-							<button>Submit</button>
+							<button type="submit">Submit</button>
 						</p>
 					</form>
 				</div>
 			</div>
 		</div>
-
-			<!-- <footer><p>Copyright &copy; 2021, Matt Dudzik</p></footer> -->
 		</div>
 	</body>
 </html>
